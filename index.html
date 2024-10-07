@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Albums</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="my-4">Albums</h1>
+            <div class="input-group mb-3">
+                <input id="newAlbum" type="text" class="form-control" placeholder="Agregar Album">
+                <div class="input-group-append">
+                    <button onclick="addAlbum()" class="btn btn-outline-secondary">Agregar</button>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input id="searchAlbum" type="text" class="form-control" placeholder="Buscar Album">
+                <div class="input-group-append">
+                    <button onclick="searchAlbum()" class="btn btn-outline-secondary">Buscar</button>
+                </div>
+            </div>
+            <div id="albumList" class="list-group"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
